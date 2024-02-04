@@ -18,7 +18,8 @@ class FoodFactory extends Factory
     {
         return [
             'title'=>fake()->word,
-            'slug'=>fake()->word
+            'slug'=>fake()->word,
+            'price'=>fake()->numberBetween(50,100),
         ];
     }
 }

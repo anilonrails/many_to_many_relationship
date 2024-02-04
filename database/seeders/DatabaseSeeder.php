@@ -14,9 +14,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-       // \App\Models\User::factory(2)->create();
-       // Food::factory(100)->create();
-       // Order::factory(1000)->create();
+        \App\Models\User::factory(2)->create();
+        Food::factory(100)->create();
+        Order::factory(1000)->create();
 
         $orders = Order::all();
         foreach ($orders as $order) {
